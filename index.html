@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+    body {
+        background-image: url('zakportfolio.jpeg');
+        background-size: cover;
+        background-attachment: fixed;
+        color: darkgreen;
+    }
+    .navbar.row{
+        background-color: blue;
+        padding-bottom: 0px !important;
+    }
+
+    .nav {
+        /*background-color: blue;*/
+        /*border-radius: 50%;*/
+        /*think about changing radius to match page corners*/
+        box-sizing: border-box;
+        color: white;
+        height: 50px;
+        /*width: 85px;*/
+        text-align: center;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        /*margin-top: 10px;*/
+        /*margin: auto;*/
+    }
+
+    .nav:hover {
+        background-color: darkblue;
+    }
+
+    .activepage {}
+
+    .nonactivepage {
+        display: none !important;
+    }
+    .page{
+        background-color: white;
+        /*margin-top: -10px;*/
+        /*margin: auto;*/
+        /*border-radius: 7px;*/
+        border-radius: 0px 0px 7px 7px;
+        padding: 40px !important;
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+        /*width: 800px;*/
+    }
+    </style>
+    <title>Zachery Dutton</title>
+</head>
+
+<body>
+    <div class='container ui grid'>
+        <!-- add margin between top and nav buttons -->
+        <!-- think about placing all nav together without spaces -->
+        <div class='navbar row'>
+            <div class=''>
+                <div class='nav'>About Me</div>
+            </div>
+            <div class=''>
+                <div class='nav'>Portfolio</div>
+            </div>
+            <div class=''>
+                <div class='nav'>Resume</div>
+            </div>
+            <div class=''>
+                <div class='nav'>Contact</div>
+            </div>
+        </div>
+        <div class='aboutme page activepage sixteen wide column'>
+            <!-- <img src=""> -->
+            <h2>Zachery Dutton</h2>
+            <h3>Front-end Developer</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        </div>
+        <div class='portfolio page nonactivepage sixteen wide column'>
+            <h2>Portfolio</h2>
+            <!-- make boxes for each site -->
+            <!-- links should open a new tab -->
+            <div>
+                <a href="https://elastic-blackwell-40a960.netlify.app/">YouTube Search Site</a>
+            </div>
+            <div>
+                <a href="https://dazzling-lalande-f9aab6.netlify.app/">Personal Lego Collection Search Site</a>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class='resume page nonactivepage sixteen wide column'>
+            <h2>Resume</h2>
+            <!-- <h3>Front-End Developer</h3> -->
+            <!-- change skills tech/non-tech/other langugaes to the same row -->
+            <!-- p tags change to a darker almost balck font color -->
+            <h4>EXPERIENCE</h4>
+            <h5>PR Newswire, Denver — Front End Developer</h5>
+            <p>February 2017- April 2017</p>
+            <p>Migrated unformated text into accessible compliant tables</p>
+            <p>Collaborated with development team to ensure tables met with international accessibility laws</p>
+            <h5>Jeffco School District, Jefferson County — Teacher</h5>
+            <p>August 2012 - January 2016</p>
+            <p>Taught “Basic” programming and Math skills at Jefferson Highschool.</p>
+            <p>Taught Java programming in an afterschool program in conjunction with Colorado School of Mines.</p>
+            <p>Taught S.T.E.M. skills to “Gifted and Talented” students at Deer Creek Middle School
+            </p>
+            <h4>TECHNICAL SKILLS</h4>
+            <p>React</p>
+            <p>JavaScript</p>
+            <p>HTML/CSS</p>
+            <p>Version Control/Git</p>
+            <p>Responsive Design</p>
+            <p>Testing/Debuggin</p>
+            <p>Browser Developer Tools</p>
+            <p>Command Line</p>
+            <p>Accessibility Compliance</p>
+            <h4>NON-TECHNICAL SKILLS</h4>
+            <p>Speed Reading</p>
+            <p>Teamwork and Collaboration</p>
+            <p>Problem Solving</p>
+            <p>Effective Communication</p>
+            <p>Teaching</p>
+            <p>Focus/ Attention to detail</p>
+            <h4>OTHER LANGUAGES</h4>
+            <p>Java</p>
+            <p>Python</p>
+            <p>C++</p>
+            <p>Processing</p>
+            <p>Arduino</p>
+            <p>Visual Basic</p>
+            <h4>EDUCATION</h4>
+            <h5>General Assembly, Front End Developer Certificate</h5>
+            <p>March 2016 - May 2016</p>
+            <h5>Grand Canyon University, Masters of Education</h5>
+            <p>August 2013- May 2015</p>
+            <h5>Metro State University, BA, English</h5>
+            <p>February 2007 - May 2012</p>
+        </div>
+        <div class='contact page nonactivepage sixteen wide column'>
+            <h2>Contact</h2>
+            <!-- make boxes for each with icons in a row -->
+            <!-- links should open a new tab -->
+            <div>
+                <a href="https://www.linkedin.com/in/zachery-dutton-a61590156/">Linkedin</a>
+            </div>
+            <div>
+                <a href="https://github.com/TheDoctorWhom">GitHub</a>
+            </div>
+            <div>
+                <a href="tel:720-277-2969">Tel: 720-277-2969</a>
+            </div>
+            <div>
+                <a href="mailto:zak.dutton@gmail.com">Email: Zak.Dutton@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    const nav = document.querySelectorAll('.nav');
+    const pages = document.querySelectorAll('.page');
+
+    const aboutMe = document.querySelector('.aboutme');
+    const profile = document.querySelector('.portfolio');
+    const resume = document.querySelector('.resume');
+    const contacts = document.querySelector('.contact');
+
+    const setPage = function(pages, page) {
+        for (i = 0; i < pages.length; i++) {
+            if (pages[i].classList.contains(page)) {
+                pages[i].classList.add('activepage');
+                pages[i].classList.remove('nonactivepage');
+            } else {
+                pages[i].classList.remove('activepage');
+                pages[i].classList.add('nonactivepage');
+            }
+        }
+    };
+
+    //About Me Nav button
+    nav[0].addEventListener('click', function() {
+        setPage(pages, 'aboutme');
+    }); // end of aboutMe eventListener function
+
+    //Portfolio Nav Button
+    nav[1].addEventListener('click', function() {
+        setPage(pages, 'portfolio');
+    }); // end of portfolio eventListener function
+
+    //resume Nav Button
+    nav[2].addEventListener('click', function() {
+        setPage(pages, 'resume');
+    }); // end of resume eventListener function
+
+    //Contact Nav Button
+    nav[3].addEventListener('click', function() {
+        setPage(pages, 'contact');
+    }); // end of Contact eventListener function
+    </script>
+</body>
+
+</html>
