@@ -9,10 +9,13 @@
         background-image: url('zakportfolio.jpeg');
         background-size: cover;
         background-attachment: fixed;
-        color: darkgreen;
+        color: #006400; /*darkgreen*/
+    }
+    p{
+        color: #0d0906; /*black*/
     }
     .navbar.row{
-        background-color: blue;
+        background-color: #1373e7; /*blue*/
         padding-bottom: 0px !important;
     }
 
@@ -21,7 +24,7 @@
         /*border-radius: 50%;*/
         /*think about changing radius to match page corners*/
         box-sizing: border-box;
-        color: white;
+        color: #fffeff; /*white*/
         height: 50px;
         /*width: 85px;*/
         text-align: center;
@@ -33,7 +36,7 @@
     }
 
     .nav:hover {
-        background-color: darkblue;
+        background-color: #045bc5; /*darkblue*/
     }
 
     .activepage {}
@@ -42,7 +45,7 @@
         display: none !important;
     }
     .page{
-        background-color: white;
+        background-color: #fffeff; /*white*/
         /*margin-top: -10px;*/
         /*margin: auto;*/
         /*border-radius: 7px;*/
@@ -52,14 +55,15 @@
         padding-left: 40px !important;
         /*width: 800px;*/
     }
+    .column{
+        margin-bottom: 60px !important;
+    }
     </style>
     <title>Zachery Dutton</title>
 </head>
 
 <body>
     <div class='container ui grid'>
-        <!-- add margin between top and nav buttons -->
-        <!-- think about placing all nav together without spaces -->
         <div class='navbar row'>
             <div class=''>
                 <div class='nav'>About Me</div>
@@ -93,7 +97,8 @@
             <div></div>
             <div></div>
         </div>
-        <div class='resume page nonactivepage sixteen wide column'>
+        <div class='resume page nonactivepage sixteen wide row'>
+            <div class="sixteen wide column">
             <h2>Resume</h2>
             <!-- <h3>Front-End Developer</h3> -->
             <!-- change skills tech/non-tech/other langugaes to the same row -->
@@ -109,6 +114,9 @@
             <p>Taught Java programming in an afterschool program in conjunction with Colorado School of Mines.</p>
             <p>Taught S.T.E.M. skills to “Gifted and Talented” students at Deer Creek Middle School
             </p>
+            </div>
+            <!-- <div class="row"> -->
+                <div class="four wide column">
             <h4>TECHNICAL SKILLS</h4>
             <p>React</p>
             <p>JavaScript</p>
@@ -119,6 +127,8 @@
             <p>Browser Developer Tools</p>
             <p>Command Line</p>
             <p>Accessibility Compliance</p>
+            </div>
+            <div class="four wide column">
             <h4>NON-TECHNICAL SKILLS</h4>
             <p>Speed Reading</p>
             <p>Teamwork and Collaboration</p>
@@ -126,6 +136,8 @@
             <p>Effective Communication</p>
             <p>Teaching</p>
             <p>Focus/ Attention to detail</p>
+            </div>
+            <div class="five wide column">
             <h4>OTHER LANGUAGES</h4>
             <p>Java</p>
             <p>Python</p>
@@ -133,6 +145,9 @@
             <p>Processing</p>
             <p>Arduino</p>
             <p>Visual Basic</p>
+            </div>
+        <!-- </div> end of row div -->
+            <div class="sixteen wide column">
             <h4>EDUCATION</h4>
             <h5>General Assembly, Front End Developer Certificate</h5>
             <p>March 2016 - May 2016</p>
@@ -140,6 +155,7 @@
             <p>August 2013- May 2015</p>
             <h5>Metro State University, BA, English</h5>
             <p>February 2007 - May 2012</p>
+            </div>
         </div>
         <div class='contact page nonactivepage sixteen wide column'>
             <h2>Contact</h2>
