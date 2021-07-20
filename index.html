@@ -14,6 +14,7 @@
     }
 
     p {
+        font-size: 1.2rem;
         color: #0d0906;
         /*black*/
     }
@@ -85,8 +86,120 @@
         background-color: #045bc5;
         /*darkblue*/
     }
-    .linkbox:last-child(){
+
+    .linkbox:last-child() {
         background-color: grey;
+    }
+
+    .quotes {
+        width: 80vw;
+        min-height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        z-index: 2;
+    }
+
+    .quotes .box {
+        position: relative;
+        width: 20vw;
+        height: 50vh;
+        min-height: 320px;
+        background: #f2f2f2;
+        overflow: hidden;
+        transition: all 0.5s ease-in;
+        z-index: 2;
+        box-sizing: border-box;
+        padding: 25px;
+        box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    }
+
+    .quotes .box::before {
+        content: '\201C';
+        position: absolute;
+        top: -20px;
+        left: 5px;
+        width: 100%;
+        height: 100%;
+        font-size: 120px;
+        opacity: 0.2;
+        background: transparent;
+        pointer-events: none;
+    }
+
+    .quotes .box::after {
+        /*content: '\201D';*/
+        /*position: absolute;*/
+        /*bottom: -10%;*/
+        /*right: 5%;*/
+        /*font-size: 120px;*/
+        /*opacity: 0.2;*/
+        /*background: transparent;*/
+        /*filter: invert(1);*/
+        /*pointer-events: none;*/
+    }
+
+    .quotes .box p {
+        margin: 0;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .quotes .box h2 {
+        /*position: absolute;*/
+        margin: 0;
+        padding: 0;
+        bottom: 10%;
+        right: 10%;
+        font-size: 1.5rem;
+    }
+
+    .quotes .box:hover {
+        color: #f2f2f2;
+        box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+    }
+
+    .quotes .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .quotes .box.box1:hover,
+    .quotes .box.box1:hover~.bg {
+        opacity: 1;
+        background: #006400;
+        background: -moz-linear-gradient(-45deg, #006400 15%, #1373e7 100%); /*#006400*/
+        background: -webkit-linear-gradient(-45deg, #006400 15%, #1373e7 100%);/*#1373e7*/
+        background: linear-gradient(135deg, #006400 15%, #1373e7 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006400', endColorstr='#1373e7', GradientType=1);
+    }
+
+    .quotes .box.box2:hover,
+    .quotes .box.box2:hover~.bg {
+        opacity: 1;
+        background: #1373e7;
+        background: -moz-linear-gradient(-45deg, #1373e7 15%, #fffeff 100%); /*#1373e7*/
+        background: -webkit-linear-gradient(-45deg, #1373e7 15%, #fffeff 100%);/*#fffeff*/
+        background: linear-gradient(135deg, #1373e7 15%, #fffeff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1373e7', endColorstr='#fffeff', GradientType=1);
+    }
+
+    .quotes .box.box3:hover,
+    .quotes .box.box3:hover~.bg {
+        opacity: 1;
+        background: #1373e7;
+        background: -moz-linear-gradient(-45deg, #1373e7 15%, #006400 100%);/*#006400*/
+        background: -webkit-linear-gradient(-45deg, #1373e7 15%, #006400 100%);/*#1373e7*/
+        background: linear-gradient(135deg, #1373e7 15%, #006400 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1373e7', endColorstr='#006400', GradientType=1);
     }
     </style>
     <title>Zachery Dutton</title>
@@ -112,17 +225,40 @@
             <!-- <img src=""> -->
             <h2>Zachery Dutton</h2>
             <h3>Front-End Developer</h3>
-            <p>Oh! Hello I didn’t see you there. My name is Zachery Dutton, but you can call me Zak. It is nice to meet you. Welcome to my website and professional portfolio. I am a Front-End Developer looking for my next role and I hope it is with you, because well... you seem nice.  I love challenges; forever looking for greater and greater ones. I am a self-taught developer and have a Masters in Reading Instruction and Curriculum which makes me an expert in learning. I believe language tells stories; be it in English, Spanish, or JavaScript. My goal is to become a full stack developer working on algorithms and design. I am skilled at pattern recognition and efficacy/efficiency maximization. With a strong command of logic; I feel at home with both Philosophy and Computer Science. I would be a strong addition to your team and look forward to working together. Let’s build the future together. </p>
+            <p>Oh! Hello I didn’t see you there. My name is Zachery Dutton, but you can call me Zak. It is nice to meet you. Welcome to my website and professional portfolio. I am a Front-End Developer looking for my next role and I hope it is with you, because well... you seem nice. I love challenges; forever looking for greater and greater ones. I am a self-taught developer and have a Masters in Reading Instruction and Curriculum which makes me an expert in learning. I believe language tells stories; be it in English, Spanish, or JavaScript. My goal is to become a full stack developer working on algorithms and design. I am skilled at pattern recognition and efficacy/efficiency maximization. With a strong command of logic; I feel at home with both Philosophy and Computer Science. I would be a strong addition to your team and look forward to working together. Let’s build the future together. </p>
         </div>
         <div class='portfolio page nonactivepage sixteen wide column'>
             <h2>Portfolio</h2>
             <!-- make boxes for each site -->
             <!-- links should open a new tab -->
-            <div>
-                <a href="https://elastic-blackwell-40a960.netlify.app/">YouTube Search Site</a>
+            <div class="quotes">
+                <div class="card">
+                    <div class="box box1">
+                        <h2>Lego Collection</h2>
+                        <p>
+                            A site written with React to search a personal collection of Lego sets by different catagories.
+                        </p>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+                <div class="card">
+                    <div class="box box2 ">
+                        <h2>YouTube Search Site</h2>
+                        <p>
+                            A site written in React and connected to the YouTube API to search for videos by keyword.
+                        </p>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+                <div class="card">
+                    <div class="box box3 ">
+                        <h2>Alexander Graham Bell</h2>
+                        <p>Before anything else, preparation is the key to success. </p>
+                    </div>
+                    <div class="bg"></div>
+                </div>
             </div>
             <div>
-                <a href="https://dazzling-lalande-f9aab6.netlify.app/">Personal Lego Collection Search Site</a>
             </div>
             <div></div>
             <div></div>
@@ -196,7 +332,8 @@
             <!-- links should open a new tab -->
             <div class="four wide column">
                 <div class="linkbox ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" /></svg>
                 </div>
             </div>
             <div class="four wide column">
@@ -214,7 +351,8 @@
             </div>
             <div class="four wide column">
                 <div class="linkbox ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24">
+                        <path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" /></svg>
                 </div>
             </div>
         </div>
@@ -223,6 +361,7 @@
     const nav = document.querySelectorAll('.nav');
     const pages = document.querySelectorAll('.page');
     const linkbox = document.querySelectorAll('.linkbox');
+    const box = document.querySelectorAll('.box');
 
     const aboutMe = document.querySelector('.aboutme');
     const profile = document.querySelector('.portfolio');
@@ -263,6 +402,14 @@
     //Email link button
     linkbox[3].addEventListener('click', function() {
         openNewTab('mailto:zak.dutton@gmail.com');
+    });
+
+    box[0].addEventListener('click', function() {
+        openNewTab('https://dazzling-lalande-f9aab6.netlify.app/');
+    });
+
+    box[1].addEventListener('click', function() {
+        openNewTab('https://elastic-blackwell-40a960.netlify.app/');
     });
 
 
